@@ -30,13 +30,33 @@
     <AppXManifest Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-07-14T15:18:39.302</Modified>
+      <Modified>2020-07-15T21:38:52.392</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Sadovod.UWP.exe">
       <PackagePath>entrypoint\Sadovod.UWP.exe</PackagePath>
-      <Modified>2020-07-14T15:18:37.421</Modified>
+      <Modified>2020-07-15T21:38:48.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.appcenter\3.3.0\lib\uap10.0\Microsoft.AppCenter.dll">
+      <PackagePath>Microsoft.AppCenter.dll</PackagePath>
+      <Modified>2020-07-03T07:17:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.appcenter.analytics\3.3.0\lib\uap10.0\Microsoft.AppCenter.Analytics.dll">
+      <PackagePath>Microsoft.AppCenter.Analytics.dll</PackagePath>
+      <Modified>2020-07-03T07:17:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.appcenter.crashes\3.3.0\lib\uap10.0\Microsoft.AppCenter.Crashes.dll">
+      <PackagePath>Microsoft.AppCenter.Crashes.dll</PackagePath>
+      <Modified>2020-07-03T07:18:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2019-11-08T21:56:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\openweathermap\1.1.0\lib\netstandard1.1\OpenWeatherMap.dll">
+      <PackagePath>OpenWeatherMap.dll</PackagePath>
+      <Modified>2017-09-08T19:33:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -64,10 +84,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
-      <Modified>2018-10-04T10:37:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Collections.Immutable.dll">
-      <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2018-10-04T10:37:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Collections.NonGeneric.dll">
@@ -398,10 +414,6 @@
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
       <Modified>2018-10-04T10:37:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Reflection.Metadata.dll">
-      <PackagePath>System.Reflection.Metadata.dll</PackagePath>
-      <Modified>2018-10-04T10:37:40.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
       <Modified>2018-10-04T10:37:40.000</Modified>
@@ -694,6 +706,38 @@
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2018-10-04T10:37:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.bundle_green\2.0.2\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2019-11-01T14:24:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.core\2.0.2\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2019-11-01T14:23:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.2\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2019-08-15T15:14:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.2\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2019-11-01T14:23:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.collections.immutable\1.6.0\lib\netstandard2.0\System.Collections.Immutable.dll">
+      <PackagePath>System.Collections.Immutable.dll</PackagePath>
+      <Modified>2019-09-12T23:27:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.memory\4.5.3\lib\netstandard2.0\System.Memory.dll">
+      <PackagePath>System.Memory.dll</PackagePath>
+      <Modified>2019-04-17T13:24:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.reflection.metadata\1.7.0\lib\netstandard2.0\System.Reflection.Metadata.dll">
+      <PackagePath>System.Reflection.Metadata.dll</PackagePath>
+      <Modified>2019-09-12T23:28:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2018-09-18T16:38:10.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-29T23:58:38.000</Modified>
@@ -720,7 +764,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.dll">
       <PackagePath>Sadovod.dll</PackagePath>
-      <Modified>2020-07-15T08:39:02.722</Modified>
+      <Modified>2020-07-15T21:39:50.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -879,11 +923,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-07-14T15:18:37.198</Modified>
+      <Modified>2020-07-15T21:38:48.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-07-14T15:18:37.198</Modified>
+      <Modified>2020-07-15T21:38:48.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -899,11 +943,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-07-14T15:14:39.931</Modified>
+      <Modified>2020-07-15T21:38:51.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Core\Sadovod.UWP.exe">
       <PackagePath>Sadovod.UWP.exe</PackagePath>
-      <Modified>2020-07-14T15:18:39.295</Modified>
+      <Modified>2020-07-15T21:38:52.383</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

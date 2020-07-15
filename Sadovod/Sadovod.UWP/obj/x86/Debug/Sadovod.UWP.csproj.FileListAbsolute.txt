@@ -311,3 +311,15 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\obj\x86\Debug\MultipleQua
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160607180000000.json
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885202160000000.json
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Microsoft.AppCenter.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Microsoft.AppCenter.Analytics.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Microsoft.AppCenter.Crashes.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\OpenWeatherMap.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\e_sqlite3.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\System.Memory.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\obj\x86\Debug\FxResources.System.Memory.SR.resw
