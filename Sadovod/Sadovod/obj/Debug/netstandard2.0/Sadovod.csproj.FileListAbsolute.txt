@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.deps.json
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\ref\Sadovod.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.pdb
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.AssemblyInfo.cs
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\ref\Sadovod.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.pdb
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\CalendarPage.xaml.g.cs
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\WeatherPage.xaml.g.cs
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\CurePage.xaml.g.cs
