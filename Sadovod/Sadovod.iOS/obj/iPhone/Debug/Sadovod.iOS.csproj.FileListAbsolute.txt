@@ -57,3 +57,11 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\obj\iPhone\Debug\XamlC.st
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\obj\iPhone\Debug\Sadovod.iOS.csproj.CopyComplete
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\obj\iPhone\Debug\Sadovod.iOS.exe
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\obj\iPhone\Debug\Sadovod.iOS.pdb
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.iOS.Bindings.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.Analytics.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.Analytics.iOS.Bindings.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.Crashes.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.Crashes.iOS.Bindings.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\OpenWeatherMap.dll

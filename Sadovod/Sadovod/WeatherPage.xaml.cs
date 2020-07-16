@@ -31,9 +31,9 @@ namespace Sadovod
 
                 if (location != null)
                 {   
-                    //string URL = "api.openweathermap.org/data/2.5/weather?lat={" + (int)location.Latitude + "}&lon={" + 
-                    // (int)location.Longitude + "}&appid={e02725c9ed5a4d87cc279b3dba21e6a6}";
-                    //GetWeather(URL);
+                    string URL = "https://api.openweathermap.org/data/2.5/weather?lat=" + (int)location.Latitude + "&lon=" + 
+                        (int)location.Longitude + "&appid=e02725c9ed5a4d87cc279b3dba21e6a6";
+                    GetWeather(URL);
                 }
             }
             catch (FeatureNotSupportedException fnsEx)
@@ -74,7 +74,7 @@ namespace Sadovod
 
         private string Temp(string full)
         {
-            string novice = full.Substring(full.IndexOf("main"), full.IndexOf("description") - full.IndexOf("main"));
+            string novice = full.Substring(full.IndexOf("main\":")+6, full.IndexOf("\"description") - full.IndexOf("main\":") - 6);
             return novice;
         }
     }
