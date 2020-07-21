@@ -42,10 +42,10 @@
                                 
                                 <Label x:Name="temperatureTxt" Text="25" TextColor="#555555" FontSize="120" HorizontalOptions="Center"/>
                                 <Label Text="°" TextColor="#555555" FontSize="120" HorizontalOptions="Center"/>
-                                <Image x:Name="mainIcon" Source="w51.png" WidthRequest="70" HeightRequest="70" VerticalOptions="Center"/>
+                                <Image x:Name="mainIconImg" Source="w51.png" WidthRequest="70" HeightRequest="70" VerticalOptions="Center"/>
                             </StackLayout>
                             
-                            <Label Text="Sunny" Margin="0,0,0,0" TextColor="#555555" FontSize="16" HorizontalOptions="Center"/>
+                            <Label x:Name="currentTxt" Text="Sunny" Margin="0,0,0,0" TextColor="#555555" FontSize="16" HorizontalOptions="Center"/>
                         </StackLayout>
                         
                     </StackLayout>
@@ -96,38 +96,50 @@
                 <Grid>
                     <BoxView BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
-                        <Label x:Name="dayOne" Text="Sunday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
-                        <Label x:Name="dayOneTxt" Margin="0,-5,0,0" Text="01 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
+                        <Label x:Name="dayOneTxt" Text="Sunday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        <Label x:Name="dateOneTxt" Margin="0,-5,0,0" Text="01 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
-                            <Label x:Name="tempOneTxt" Text="22" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                            <Label x:Name="maxTempOneTxt" Text="22" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
                             <Label Text="°" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
                         </StackLayout>
-                        <Image x:Name="iconOne" Source="w52.png" Margin="0,20" WidthRequest="30" HeightRequest="30"/>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="EndAndExpand" Spacing="0" Margin="0, -6">
+                            <Label x:Name="minTempOneTxt" Text="15"  TextColor="#555555" FontSize="16" />
+                            <Label Text="°" TextColor="#555555" FontSize="16"/>
+                        </StackLayout>
+                        <Image x:Name="iconOne" Source="w52.png" Margin="0,5" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"/>
                         
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Column="1">
                     <BoxView BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
-                        <Label x:Name="dayTwo" Text="Monday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        <Label x:Name="dayTwoTxt" Text="Monday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
                         <Label x:Name="dateTwoTxt" Margin="0,-5,0,0" Text="02 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
-                            <Label x:Name="tempTwoTxt" Text="17" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                            <Label x:Name="maxTempTwoTxt" Text="17" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
                             <Label Text="°" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
                         </StackLayout>
-                        <Image x:Name="iconTwo" Source="w52.png" Margin="0,20" WidthRequest="30" HeightRequest="30"/>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="EndAndExpand" Spacing="0" Margin="0, -6">
+                            <Label x:Name="minTempTwoTxt" Text="13"  TextColor="#555555" FontSize="16" />
+                            <Label Text="°" TextColor="#555555" FontSize="16"/>
+                        </StackLayout>
+                        <Image x:Name="iconTwo" Source="w52.png" Margin="0,5" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"/>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Column="2">
                     <BoxView BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
-                        <Label x:Name="dayThree" Text="Tuesday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        <Label x:Name="dayThreeTxt" Text="Tuesday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
                         <Label x:Name="dateThreeTxt" Margin="0,-5,0,0" Text="03 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
-                            <Label x:Name="tempThreeTxt" Text="28"  TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
-                            <Label Text="°" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="0">
+                             <Label x:Name="maxTempThreeTxt" Text="28"  TextColor="#555555" FontSize="21" HorizontalOptions="StartAndExpand"/>
+                             <Label Text="°" TextColor="#555555" FontSize="21" HorizontalOptions="StartAndExpand"/>
                         </StackLayout>
-                        <Image x:Name="iconThree" Source="w52.png" Margin="0,20" WidthRequest="30" HeightRequest="30"/>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="EndAndExpand" Spacing="0" Margin="0, -6">
+                            <Label x:Name="minTempThreeTxt" Text="14"  TextColor="#555555" FontSize="16" />
+                            <Label Text="°" TextColor="#555555" FontSize="16"/>
+                        </StackLayout>
+                        <Image x:Name="iconThree" Source="w52.png" Margin="0,5" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"/>
                     </StackLayout>
                 </Grid>
                 
