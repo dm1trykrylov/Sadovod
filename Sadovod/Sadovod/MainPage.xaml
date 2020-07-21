@@ -6,7 +6,9 @@
              mc:Ignorable="d"
              x:Class="Sadovod.MainPage"
             xmlns:local="clr-namespace:Sadovod">
-    <local:WeatherPage></local:WeatherPage>
-    <local:CalendarPage></local:CalendarPage>
-    <local:CurePage></local:CurePage>
+    <TabbedPage.Children>
+        <local:CalendarPage></local:CalendarPage>
+        <local:WeatherPage></local:WeatherPage>
+        <local:CurePage></local:CurePage>
+    </TabbedPage.Children>
 </TabbedPage>
