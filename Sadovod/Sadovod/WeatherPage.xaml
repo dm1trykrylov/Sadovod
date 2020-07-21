@@ -5,12 +5,122 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Sadovod.WeatherPage"
-             Title="Weather">
+             Title="Weather"
+             BackgroundColor="#7CB342"
+             Opacity="0.5"
+             IsVisible="True">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Weather Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <BoxView Grid.RowSpan="2" BackgroundColor="#FFFFFF" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <Grid Grid.Row="0">
+                    <Image Source="hills_noBorder.png" Aspect="AspectFill"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <StackLayout Spacing="20">
+                        <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="Center">
+                            <StackLayout VerticalOptions="Center">
+                                <Image x:Name="iconImg" Source="(28).png" WidthRequest="67" HeightRequest="50"/>
+                                <Label x:Name="descriptionTxt" Text="Cloudy" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout VerticalOptions="Center">
+                                <Label x:Name="cityTxt" Text="LONDON" TextColor="#555555" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                <Label x:Name="dateTxt" Text="SATURDAY, NOV 30" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                                <Label x:Name="temperatureTxt" Text="25" TextColor="#555555" FontSize="150" HorizontalOptions="Center"/>
+                                <Label Text="°" TextColor="#555555" FontSize="150" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="CELSIUS" Margin="0,-30,0,0" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <Grid WidthRequest="320" ColumnSpacing="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="CenterAndExpand">
+                                <Image Source="(50).png" HeightRequest="25" HorizontalOptions="Center"/>
+                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                                    <Label x:Name="moonPhT" Text="new" TextColor="#555555" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                    <Label Text="Moon phase" TextColor="#555555" Margin="0,-5,0,0" FontSize="11" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="0" HorizontalOptions="CenterAndExpand">
+                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                                    <Label x:Name="dayLenT" Text="12 h 00 min" TextColor="#555555" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                    <Label Text="Daylength" TextColor="#555555" Margin="0,-5,0,0" FontSize="11" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1" HeightRequest="30" ColumnSpacing="0" RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <BoxView BackgroundColor="#7CB342" Opacity="0.5" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="3-day Forecast" TextColor="#555555" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="16" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2" HeightRequest="160" ColumnSpacing="2" RowSpacing="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid>
+                    <BoxView BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                        <Label x:Name="dayOneDsc" Text="Sunday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        <Label x:Name="dayOneT" Margin="0,-5,0,0" Text="01 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                            <Label x:Name="tempOne" Text="22" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                            <Label Text="°" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <Image x:Name="iconOne" Source="(28).png" Margin="0,20" WidthRequest="30" HeightRequest="22"/>
+                        
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <BoxView BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                        <Label x:Name="dayTwoDsc" Text="Monday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        <Label x:Name="dateTwoT" Margin="0,-5,0,0" Text="02 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                            <Label x:Name="tempTwoTxt" Text="17" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                            <Label Text="°" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <Image x:Name="iconTwoImg" Source="(28).png" Margin="0,20" WidthRequest="30" HeightRequest="22"/>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <BoxView BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                        <Label x:Name="dayThreeTxt" Text="Tuesday" TextColor="#555555" FontSize="13" HorizontalOptions="Center"/>
+                        <Label x:Name="dateThreeTxt" Margin="0,-5,0,0" Text="03 Dec" TextColor="#555555" FontSize="10" HorizontalOptions="Center"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                            <Label x:Name="tempThreeTxt" Text="28"  TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                            <Label Text="°" TextColor="#555555" FontSize="23" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <Image x:Name="iconThreeImg" Source="(28).png"  WidthRequest="30" HeightRequest="22"/>
+                    </StackLayout>
+                </Grid>
+                
+            </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
