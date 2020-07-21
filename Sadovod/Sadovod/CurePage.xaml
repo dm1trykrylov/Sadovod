@@ -6,12 +6,12 @@
              mc:Ignorable="d"
              x:Class="Sadovod.CurePage"
              Title="Cure"
-             IconImageSource="baseline_healing_black.png">
+             BackgroundColor="#FFFFFF"
+             Opacity="0.5"
+             IconImageSource="addCircleOutline.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Cure Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="searchPlant" Margin="0,20" Placeholder="Растение" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
