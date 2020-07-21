@@ -10,8 +10,41 @@
              Opacity="0.5"
              IconImageSource="addCircleOutline.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="searchPlant" Margin="0,20" Placeholder="Растение" HorizontalOptions="CenterAndExpand"/>
-        </StackLayout>
+        <ScrollView>
+        <RelativeLayout>
+            <Image Source="flowers.png" Opacity="0.5"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+            <Grid RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                    <SearchBar
+                       x:Name="searchPlant" 
+                       Margin="0,20" 
+                       Placeholder="Enter plant" 
+                       VerticalOptions="StartAndExpand" 
+                       HorizontalOptions="CenterAndExpand" 
+                       PlaceholderColor="#555555"
+                       SearchButtonPressed="SearchPlantButtonPressed"
+                    />
+                    <Label x:Name="IName" Text="SomeIllness" IsVisible="False"/>
+                    
+                    <Button x:Name="OKbutton" Text="OK" HorizontalOptions="CenterAndExpand" 
+                            TextColor="#555555" FontSize="24"
+                            BackgroundColor="#B6D856" Clicked="OnButtonClicked" 
+                            IsVisible="False"/>
+                    <Label x:Name="IArticle" Text="SomeText" IsVisible="False"/>
+                    
+                </StackLayout>
+               
+                
+                       
+            </Grid>
+        </RelativeLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

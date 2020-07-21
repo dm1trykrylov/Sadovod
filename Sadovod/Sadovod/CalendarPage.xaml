@@ -3,15 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+             xmlns:viewmodels="clr-namespace:Sadovod"
+             BackgroundColor="#FFFFFF"
              mc:Ignorable="d"
              x:Class="Sadovod.CalendarPage"
              IconImageSource="today.png"
              Title="Calendar">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Calendar Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <controls:Calendar 
+            Padding="10,0,10,0"   
+            x:Name="LunarCalendar"
+                           SelectedBorderWidth="4"   
+                           DisabledBorderColor="#000000"  
+                           ShowNumberOfWeek="false"  
+                           StartDay="Monday"  
+                           TitleLabelTextColor="#555555"  
+                           TitleLeftArrowTextColor="LightGreen"  
+                           TitleRightArrowTextColor="LightGreen"
+                           SelectedDate="{Binding Date}"  
+                           SpecialDates="{Binding Attendances}"  
+                           DateCommand="{Binding DateChosen}"
+                           BackgroundColor="#FFFFFF"/>
+    </StackLayout>
+
+
 </ContentPage>

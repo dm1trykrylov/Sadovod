@@ -15,6 +15,7 @@ namespace Sadovod
         public CalendarPage()
         {
             InitializeComponent();
+            LunarCalendar.SelectedDate = DateTime.Today;
         }
     }
 }
