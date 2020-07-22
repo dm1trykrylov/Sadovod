@@ -10,7 +10,7 @@ namespace Sadovod
         {
             InitializeComponent();
 
-            MainPage = new TabbedPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
