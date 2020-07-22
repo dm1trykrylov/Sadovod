@@ -71,7 +71,7 @@ namespace Sadovod
         {
             using (var client = new HttpClient())
             {
-                var response = await client.PostAsync(URL, null);
+                var response = await client.GetAsync(URL);//post or get
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync();
