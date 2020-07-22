@@ -4,7 +4,7 @@ using Xamarin.Forms;
   
 namespace Sadovod  
 {  
-    public class CalendarPageModel : BindableObject  
+    public class CalendarVM : BindableObject  
     {  
         private DateTime? _date;  
         public DateTime? Date  

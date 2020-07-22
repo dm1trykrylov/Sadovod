@@ -12,21 +12,25 @@
              Title="Calendar">
 
 
-    <StackLayout VerticalOptions="CenterAndExpand">
+    <StackLayout>
         <controls:Calendar 
             Padding="10,0,10,0"   
             x:Name="LunarCalendar"
-                           SelectedBorderWidth="4"   
-                           DisabledBorderColor="#000000"  
-                           ShowNumberOfWeek="false"  
-                           StartDay="Monday"  
-                           TitleLabelTextColor="#555555"  
-                           TitleLeftArrowTextColor="LightGreen"  
-                           TitleRightArrowTextColor="LightGreen"
-                           SelectedDate="{Binding Date}"  
-                           SpecialDates="{Binding Attendances}"  
-                           DateCommand="{Binding DateChosen}"
-                           BackgroundColor="#FFFFFF"/>
+            
+            TitleLabelText="Lunar calendar"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="FillAndExpand"
+            SelectedBorderWidth="4"   
+            DisabledBorderColor="#000000"  
+            ShowNumberOfWeek="false"  
+            StartDay="Monday"  
+            TitleLabelTextColor="#555555"  
+            TitleLeftArrowTextColor="LightGreen"  
+            TitleRightArrowTextColor="LightGreen"
+            DateClicked="OnDateChosen"
+            DatesBackgroundColor="LightGreen"
+            BackgroundColor="#FFFFFF"
+            />
     </StackLayout>
 
 

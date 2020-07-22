@@ -28,6 +28,10 @@ namespace Sadovod
         private const string AppID = "e02725c9ed5a4d87cc279b3dba21e6a6";
         private Location location = new Location();
 
+        private const string cultPattern = "ru-RU";
+        private System.Globalization.CultureInfo curCulture = new System.Globalization.CultureInfo(cultPattern);
+        private string timePattern = "h'h 'mm'min'";
+
         private async void GetLocation()
         {
             try
@@ -78,7 +82,12 @@ namespace Sadovod
                     temperatureTxt.Text = weatherInfo.main.temp.ToString("0");
 
                     DateTime dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
-                    dateTxt.Text = dt.ToString("dddd, MMM dd").ToUpper();
+                    dateTxt.Text = dt.ToString("dddd, MMM dd", curCulture).ToUpper();
+
+                    double timestamp = weatherInfo.sys.sunset - weatherInfo.sys.sunrise;
+                    DateTime dtt = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+                    dtt = dtt.AddSeconds(timestamp);
+                    dayLenTxt.Text = dtt.ToString(timePattern);
                 }
             }
         }
@@ -111,20 +120,20 @@ namespace Sadovod
                         if (date > DateTime.Now && date.Hour == 0 && date.Minute == 0 && date.Second == 0)
                             allList.Add(list);
                     }
-                    dayOneTxt.Text = DateTime.Parse(allList[0].dt_txt).ToString("dddd");
-                    dateOneTxt.Text = DateTime.Parse(allList[0].dt_txt).ToString("dd MMM");
+                    dayOneTxt.Text = DateTime.Parse(allList[0].dt_txt).ToString("dddd", curCulture);
+                    dateOneTxt.Text = DateTime.Parse(allList[0].dt_txt).ToString("dd MMM", curCulture);
                     iconOne.Source = $"w{allList[0].weather[0].icon}";
                     maxTempOneTxt.Text = allList[0].main.temp_max.ToString("0");
                     minTempOneTxt.Text = allList[0].main.temp_min.ToString("0");
 
-                    dayTwoTxt.Text = DateTime.Parse(allList[1].dt_txt).ToString("dddd");
-                    dateTwoTxt.Text = DateTime.Parse(allList[1].dt_txt).ToString("dd MMM");
+                    dayTwoTxt.Text = DateTime.Parse(allList[1].dt_txt).ToString("dddd", curCulture);
+                    dateTwoTxt.Text = DateTime.Parse(allList[1].dt_txt).ToString("dd MMM", curCulture);
                     iconTwo.Source = $"w{allList[1].weather[0].icon}";
                     maxTempTwoTxt.Text = allList[1].main.temp_max.ToString("0");
                     minTempTwoTxt.Text = allList[1].main.temp_min.ToString("0");
 
-                    dayThreeTxt.Text = DateTime.Parse(allList[2].dt_txt).ToString("dddd");
-                    dateThreeTxt.Text = DateTime.Parse(allList[2].dt_txt).ToString("dd MMM");
+                    dayThreeTxt.Text = DateTime.Parse(allList[2].dt_txt).ToString("dddd", curCulture);
+                    dateThreeTxt.Text = DateTime.Parse(allList[2].dt_txt).ToString("dd MMM", curCulture);
                     iconThree.Source = $"w{allList[2].weather[0].icon}";
                     maxTempThreeTxt.Text = allList[2].main.temp_max.ToString("0");
                     minTempThreeTxt.Text = allList[2].main.temp_min.ToString("0");
