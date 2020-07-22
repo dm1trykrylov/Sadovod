@@ -22,25 +22,25 @@ namespace Sadovod
             InitializeComponent();
         }
 
-        private async void SearchPlantButtonPressed(object sender, EventArgs e)
-        {
-            PlantName = searchPlant.Text.ToString();
-            SymptomList = GetSymptoms(searchPlant.Text);
-            if(SymptomList.Length > 0)
-            {
-                OKbutton.IsVisible = true;
+        //private async void SearchPlantButtonPressed(object sender, EventArgs e)
+        //{
+        //    PlantName = searchPlant.Text.ToString();
+        //    SymptomList = GetSymptoms(searchPlant.Text);
+        //    if(SymptomList.Length > 0)
+        //    {
+        //        OKbutton.IsVisible = true;
 
-                //SymptomPicker.ItemsSource = SymptomList;
-                //SymptomPicker.IsVisible = true;
-                IsSelectedItem = new bool[SymptomList.Length];
-                IsSelectedItem.SetValue(false, 0, SymptomList.Length - 1);
+        //        //SymptomPicker.ItemsSource = SymptomList;
+        //        //SymptomPicker.IsVisible = true;
+        //        IsSelectedItem = new bool[SymptomList.Length];
+        //        IsSelectedItem.SetValue(false, 0, SymptomList.Length - 1);
 
-            }
-            else
-            {
-                await DisplayAlert("Plant Search", "Unknown plant", "OK");
-            }
-        }
+        //    }
+        //    else
+        //    {
+        //        await DisplayAlert("Plant Search", "Unknown plant", "OK");
+        //    }
+        //}
 
         private string[] GetSymptoms(string plant)
         {
@@ -65,17 +65,17 @@ namespace Sadovod
             }
         }
 
-        private void OnButtonClicked (object sender, System.EventArgs e)
-        {
-            //SymptomPicker.IsVisible = false;
-            OKbutton.IsVisible = false;
-            PlantIllness = GetIllness(PlantName, IsSelectedItem);
-            IName.Text = PlantIllness;
-            IName.IsVisible = true;
+        //private void OnButtonClicked (object sender, System.EventArgs e)
+        //{
+        //    //SymptomPicker.IsVisible = false;
+        //    OKbutton.IsVisible = false;
+        //    PlantIllness = GetIllness(PlantName, IsSelectedItem);
+        //    IName.Text = PlantIllness;
+        //    IName.IsVisible = true;
 
-            IArticle.Text = GetInfo(PlantIllness);
-            IArticle.IsVisible = true;
-        }
+        //    IArticle.Text = GetInfo(PlantIllness);
+        //    IArticle.IsVisible = true;
+        //}
 
         private string GetIllness (string plant, bool[] symptMask)
         {
