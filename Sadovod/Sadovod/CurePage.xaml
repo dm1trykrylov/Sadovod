@@ -6,12 +6,24 @@
              mc:Ignorable="d"
              x:Class="Sadovod.CurePage"
              Title="Cure"
-            
-             Opacity="0.5"
-             IconImageSource="addCircleOutline.png">
+             BackgroundColor="#FFFFFF"
+             >
+
     <ContentPage.Content>
 
-        <Image Source="flowers.png" Aspect="AspectFill"/>
+        <RelativeLayout>
+            <Image Source="flowers.png" Opacity="0.3"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+            <Grid RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">
 
+                
+            </Grid>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

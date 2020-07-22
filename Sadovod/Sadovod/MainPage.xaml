@@ -5,10 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Sadovod.MainPage"
+            
             xmlns:local="clr-namespace:Sadovod">
     <TabbedPage.Children>
-        <local:CalendarPage />
-        <local:WeatherPage />
-        <local:CurePage />
+        <local:CalendarPage Title="Calendar" IconImageSource="today.png"/>
+        <local:WeatherPage Title="Weather" IconImageSource="cloudQueue.png"/>
+        <local:CurePage Title="Cure" IconImageSource="addCircleOutline.png"/>
     </TabbedPage.Children>
 </TabbedPage>

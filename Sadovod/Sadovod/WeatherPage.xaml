@@ -5,8 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Sadovod.WeatherPage"
-             Title="Weather"
+             
              BackgroundColor="#7CB342"
+             Title="Weather"
              IconImageSource="cloudQueue.png"
              IsVisible="True">
     <ContentPage.Content>
