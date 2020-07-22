@@ -21,7 +21,25 @@
               "{ConstraintExpression Type=RelativeToParent, Property=Width}"
             RelativeLayout.HeightConstraint=
               "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout>
+                    <SearchBar x:Name="PlantSearchBar" Placeholder="Растение..." PlaceholderColor="LightGray" 
+                           TextColor="#555555" SearchButtonPressed="SearchPlant"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="StartAndExpand" Margin="0, 2"/>
+                    <Label x:Name="SymptomListTxt" Text="Симптомы:" TextColor="#555555"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="StartAndExpand"
+                           BackgroundColor="LightGreen"/>
 
+                    <Entry x:Name="SymptChoise" Placeholder="Номера симптомов" TextColor="#555555"
+                           HorizontalOptions="CenterAndExpand"/>
+
+                    <Button x:Name="OKbutton" Clicked="OnButtonClicked" Text="OK"
+                            BackgroundColor="LightGreen" VerticalOptions="StartAndExpand" 
+                            HorizontalOptions="Center"/>
+
+
+                </StackLayout>
                 
             </Grid>
         </RelativeLayout>
