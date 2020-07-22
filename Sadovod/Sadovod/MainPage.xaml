@@ -7,8 +7,8 @@
              x:Class="Sadovod.MainPage"
             xmlns:local="clr-namespace:Sadovod">
     <TabbedPage.Children>
-        <local:CalendarPage></local:CalendarPage>
-        <local:WeatherPage></local:WeatherPage>
-        <local:CurePage></local:CurePage>
+        <local:CalendarPage />
+        <local:WeatherPage />
+        <local:CurePage />
     </TabbedPage.Children>
 </TabbedPage>

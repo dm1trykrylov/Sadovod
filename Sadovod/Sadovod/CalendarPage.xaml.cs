@@ -26,9 +26,12 @@ namespace Sadovod
         private void GetAndSetSpecialDates(string monthYear)
         {
             /* send request */
+            
+            //test data below
             var notRecommendedDates = new int[] { 1, 2, 5, 7, 9, 23};
             var bannedDates = new int[] { 13, 30 };
             DateTime monthStart = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            //
 
             var specialList = new List<XamForms.Controls.SpecialDate>();
             foreach (int date in notRecommendedDates)
