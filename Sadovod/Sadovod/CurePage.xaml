@@ -6,12 +6,44 @@
              mc:Ignorable="d"
              x:Class="Sadovod.CurePage"
              Title="Cure"
-             IconImageSource="baseline_healing_black.png">
+             BackgroundColor="#FFFFFF"
+             >
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Cure Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <RelativeLayout>
+            <Image Source="flowers.png" Opacity="0.3"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+            <Grid RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Spacing="0">
+                    <SearchBar x:Name="PlantSearchBar" Placeholder="Введите растение..." PlaceholderColor="LightGray" 
+                           TextColor="#555555" SearchButtonPressed="SearchPlant" FontSize="22"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="Start" Margin="0, 20"/>
+                    <Label x:Name="SymptomListTxt"  TextColor="#555555"
+                           Text="Симптомы:"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Start" FontSize="20"
+                           BackgroundColor="LightGreen"/>
+
+                    <Entry x:Name="SymptChoise" Placeholder="Введите номера симптомов" TextColor="#555555" 
+                           PlaceholderColor="LightGray" FontSize="16"
+                           HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
+
+                    <Button x:Name="OKbutton" Clicked="OnButtonClicked" Text="OK"
+                            BackgroundColor="LightGreen" VerticalOptions="StartAndExpand" 
+                            HorizontalOptions="Center"/>
+
+
+                </StackLayout>
+                
+            </Grid>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
