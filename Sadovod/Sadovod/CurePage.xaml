@@ -22,14 +22,21 @@
             RelativeLayout.HeightConstraint=
               "{ConstraintExpression Type=RelativeToParent, Property=Height}">
                 <StackLayout Spacing="0">
+                  <ScrollView>
                     <SearchBar x:Name="PlantSearchBar" Placeholder="Введите растение..." PlaceholderColor="LightGray" 
                            TextColor="#555555" SearchButtonPressed="SearchPlant" FontSize="22"
                            HorizontalOptions="CenterAndExpand" 
                            VerticalOptions="Start" Margin="0, 20"/>
-                    <Label x:Name="SymptomListTxt"  TextColor="#555555"
+                    <Label x:Name="SymptomHeader"  TextColor="#555555"
                            Text="Симптомы:"
                            HorizontalOptions="CenterAndExpand"
                            VerticalOptions="Start" FontSize="20"
+                           BackgroundColor="LightGreen"/>
+                    
+                    <Label x:Name="SymptomListTxt"  TextColor="#555555"
+                           
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Start" FontSize="28"
                            BackgroundColor="LightGreen"/>
 
                     <Entry x:Name="SymptChoise" Placeholder="Введите номера симптомов" TextColor="#555555" 
@@ -40,7 +47,7 @@
                             BackgroundColor="LightGreen" VerticalOptions="StartAndExpand" 
                             HorizontalOptions="Center"/>
 
-
+                  </ScrollView>
                 </StackLayout>
                 
             </Grid>
