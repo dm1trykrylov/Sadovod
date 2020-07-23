@@ -814,3 +814,9 @@ xamarin.forms.platform.android.appcompat.TabbedPageRenderer;crc64720bb2db43a66fe
 Xamarin.Forms.Platform.Android.AppCompat.ViewRenderer`2, Xamarin.Forms.Platform.Android;crc64720bb2db43a66fe9.ViewRenderer_2
 Xamarin.Forms.Platform.Android.AppCompat.ViewRenderer`2;crc64720bb2db43a66fe9.ViewRenderer_2
 xamarin.forms.platform.android.appcompat.ViewRenderer_2;crc64720bb2db43a66fe9.ViewRenderer_2
+XamForms.Controls.Droid.CalendarButtonRenderer, XamForms.Controls.Calendar.Droid;crc64fd013b27b0f98839.CalendarButtonRenderer
+XamForms.Controls.Droid.CalendarButtonRenderer;crc64fd013b27b0f98839.CalendarButtonRenderer
+xamforms.controls.droid.CalendarButtonRenderer;crc64fd013b27b0f98839.CalendarButtonRenderer
+XamForms.Controls.Droid.TextDrawable, XamForms.Controls.Calendar.Droid;crc64fd013b27b0f98839.TextDrawable
+XamForms.Controls.Droid.TextDrawable;crc64fd013b27b0f98839.TextDrawable
+xamforms.controls.droid.TextDrawable;crc64fd013b27b0f98839.TextDrawable

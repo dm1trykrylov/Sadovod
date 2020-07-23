@@ -34,27 +34,30 @@ namespace Sadovod
             PlantName = PlantSearchBar.Text.ToString();
             GetSymptoms(PlantSearchBar.Text);
 
-            IsSelectedItem = new bool[SymptomList.Length];
-            IsSelectedItem.SetValue(false, 0, SymptomList.Length - 1);
+            //IsSelectedItem = new bool[SymptomList.Length];
+            //IsSelectedItem.SetValue(false, 0, SymptomList.Length - 1);
 
                        
         }
 
         private async void GetSymptoms(string plant)
         {
-            var url = $"{symptURL}{plant}";
+            var url = $"{symptURL}";
+            var obj = new { name = plant };
             using(var client = new HttpClient())
             {
-                var response = await client.GetAsync(url);
+                var payload = JsonConvert.SerializeObject(obj);
+                var content = new StringContent(payload, Encoding.UTF8, @"application/json");
+                var response = await client.PostAsync(url, content);
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync();
-                    symptList = JsonConvert.DeserializeObject<SymptomsList>(result);
+                    symptList = Unwrap(result);
+                    //SymptomListTxt.Text += result;
                     int count = 1;
                     foreach(string sympt in symptList.Symptoms)
                     {
-                        SymptomListTxt.Text += $@"
-                                                {count++} {sympt}";
+                        SymptomListTxt.Text += $@"{count++} {sympt}";
                     }
                 }
                 else
@@ -68,7 +71,13 @@ namespace Sadovod
             
         }
 
-       
+        private SymptomsList Unwrap(string result)
+        {
+            result.Replace("[", String.Empty).Replace("]", String.Empty).Replace("{", String.Empty).Replace("}", String.Empty);
+            SymptomsList list = new SymptomsList();
+            list.Symptoms = result.Split(',');
+            return list;
+        }
 
         private async void OnButtonClicked(object sender, System.EventArgs e)
         {

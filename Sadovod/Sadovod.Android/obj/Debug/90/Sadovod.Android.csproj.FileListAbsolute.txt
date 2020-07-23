@@ -511,3 +511,10 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\src\mono\com\microsoft\appcenter\crashes\CrashesListenerImplementor.java
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\src\mono\com\microsoft\appcenter\utils\context\UserIdContext_ListenerImplementor.java
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\src\mono\com\microsoft\appcenter\utils\NetworkStateHelper_ListenerImplementor.java
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\assets\System.ObjectModel.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\assets\System.Resources.ResourceManager.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\assets\System.Threading.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\assets\XamForms.Controls.Calendar.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\assets\XamForms.Controls.Calendar.Droid.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\src\crc64fd013b27b0f98839\CalendarButtonRenderer.java
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.Android\obj\Debug\90\android\src\crc64fd013b27b0f98839\TextDrawable.java

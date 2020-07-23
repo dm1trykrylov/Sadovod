@@ -65,3 +65,5 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsof
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Microsoft.AppCenter.Crashes.iOS.Bindings.dll
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\OpenWeatherMap.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\XamForms.Controls.Calendar.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.iOS\bin\iPhone\Debug\XamForms.Controls.Calendar.iOS.dll

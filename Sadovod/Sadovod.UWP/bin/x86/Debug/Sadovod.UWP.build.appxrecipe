@@ -571,6 +571,12 @@
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.5.0.495\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\xamforms.controls.calendar\1.1.1\lib\UAP10\XamForms.Controls.Calendar.UWP.dll">
+      <PackagePath>XamForms.Controls.Calendar.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\xamforms.controls.calendar\1.1.1\lib\UAP10\XamForms.Controls.Calendar.dll">
+      <PackagePath>XamForms.Controls.Calendar.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.dll">
       <PackagePath>Sadovod.dll</PackagePath>
     </AppxPackagedFile>

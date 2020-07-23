@@ -581,6 +581,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -589,8 +603,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -1281,6 +1296,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1289,8 +1318,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -1982,6 +2012,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1990,8 +2034,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -2504,6 +2549,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2512,8 +2571,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -3204,6 +3264,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3212,8 +3286,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -3905,6 +3980,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3913,8 +4002,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -4605,6 +4695,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4613,8 +4717,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -5306,6 +5411,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "Sadovod/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5314,8 +5433,9 @@
           "Microsoft.AppCenter.Crashes": "3.3.0",
           "Newtonsoft.Json": "12.0.3",
           "OpenWeatherMap": "1.1.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/Sadovod.dll": {}
@@ -9748,6 +9868,30 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "XamForms.Controls.Calendar/1.1.1": {
+      "sha512": "GCydwm9HO+8V4iGVsGJZtnHJaqIpjas40BSRU+T7lIM7E4nZ7pOn2Ifzu0Y6MLrZJuqCHFeroOWjJSfOjZIyyw==",
+      "type": "package",
+      "path": "xamforms.controls.calendar/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/XamForms.Controls.Calendar.Droid.dll",
+        "lib/MonoAndroid10/XamForms.Controls.Calendar.dll",
+        "lib/MonoTouch10/XamForms.Controls.Calendar.dll",
+        "lib/MonoTouch10/XamForms.Controls.Calendar.iOS.dll",
+        "lib/UAP10/XamForms.Controls.Calendar.UWP.dll",
+        "lib/UAP10/XamForms.Controls.Calendar.dll",
+        "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll",
+        "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/XamForms.Controls.Calendar.dll",
+        "lib/win81/XamForms.Controls.Calendar.Windows.dll",
+        "lib/win81/XamForms.Controls.Calendar.dll",
+        "lib/wpa81/XamForms.Controls.Calendar.WinPhone.dll",
+        "lib/wpa81/XamForms.Controls.Calendar.dll",
+        "xamforms.controls.calendar.1.1.1.nupkg.sha512",
+        "xamforms.controls.calendar.nuspec"
+      ]
+    },
     "Sadovod/1.0.0": {
       "type": "project",
       "path": "../Sadovod/Sadovod.csproj",
@@ -9872,7 +10016,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Обнаружено понижение версии пакета Xamarin.Forms с 4.7.0.1080 на 4.5.0.495. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n Sadovod.UWP -> Sadovod -> Xamarin.Forms (>= 4.7.0.1080) \r\n Sadovod.UWP -> Xamarin.Forms (>= 4.5.0.495)",
+      "message": "Обнаружено понижение версии пакета Xamarin.Forms с 4.7.0.1142 на 4.5.0.495. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n Sadovod.UWP -> Sadovod -> Xamarin.Forms (>= 4.7.0.1142) \r\n Sadovod.UWP -> Xamarin.Forms (>= 4.5.0.495)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "UAP,Version=v10.0.16299",

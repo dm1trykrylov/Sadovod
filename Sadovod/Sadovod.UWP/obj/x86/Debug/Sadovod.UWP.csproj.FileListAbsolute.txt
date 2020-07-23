@@ -323,3 +323,5 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\SQLitePCLRa
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\System.Memory.dll
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\obj\x86\Debug\FxResources.System.Memory.SR.resw
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\XamForms.Controls.Calendar.UWP.dll
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod.UWP\bin\x86\Debug\XamForms.Controls.Calendar.dll

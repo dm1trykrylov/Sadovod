@@ -7,7 +7,7 @@
              x:Class="Sadovod.WeatherPage"
              
              BackgroundColor="#7CB342"
-             Title="Weather"
+             Title="Погода"
              IconImageSource="cloudQueue.png"
              IsVisible="True">
     <ContentPage.Content>

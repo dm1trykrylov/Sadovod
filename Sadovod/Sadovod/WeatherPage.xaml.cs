@@ -23,8 +23,8 @@ namespace Sadovod
             GetLocation();
         }
 
-        private string curURL = "http://api.openweathermap.org/data/2.5/weather?";
-        private string forecastURL = "http://api.openweathermap.org/data/2.5/forecast?";
+        private string curURL = "https://api.openweathermap.org/data/2.5/weather?";
+        private string forecastURL = "https://api.openweathermap.org/data/2.5/forecast?";
         private const string AppID = "e02725c9ed5a4d87cc279b3dba21e6a6";
         private Location location = new Location();
 

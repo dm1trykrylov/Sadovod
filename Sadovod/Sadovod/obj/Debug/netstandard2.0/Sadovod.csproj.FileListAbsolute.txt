@@ -2,7 +2,6 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sado
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.dll
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\ref\Sadovod.dll
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\bin\Debug\netstandard2.0\Sadovod.pdb
-C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.csprojAssemblyReference.cache
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.AssemblyInfoInputs.cache
@@ -15,3 +14,5 @@ C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Weat
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\CurePage.xaml.g.cs
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\DiseaseInfoPage.xaml.g.cs
+C:\Users\User\source\repos\Sadovod\Sadovod\Sadovod\obj\Debug\netstandard2.0\Sadovod.csprojAssemblyReference.cache
