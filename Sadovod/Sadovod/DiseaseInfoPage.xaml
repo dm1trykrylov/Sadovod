@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sadovod.DiseaseInfoPage"
              BackgroundColor="#FFFFFF">
     <ContentPage.Content>
+       <ScrollView>
         <StackLayout>
             <Label x:Name="DiseaseNameTxt" Text="Disease"
                 VerticalOptions="StartAndExpand" TextColor="#555555" FontSize="22"
@@ -17,6 +18,7 @@
             <Button x:Name="BackButton" Clicked="BackButtonClicked" Text="Назад" BackgroundColor="LightGreen"
                     TextColor="#555555" HorizontalOptions="CenterAndExpand"
                     VerticalOptions="StartAndExpand"/>
-        </StackLayout>
+          </StackLayout>
+      </ScrollView>
     </ContentPage.Content>
 </ContentPage>
