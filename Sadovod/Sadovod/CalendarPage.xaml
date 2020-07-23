@@ -3,14 +3,83 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+             xmlns:viewmodels="clr-namespace:Sadovod"
+             BackgroundColor="#FFFFFF"
              mc:Ignorable="d"
              x:Class="Sadovod.CalendarPage"
+             IconImageSource="today.png"
              Title="Calendar">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Calendar Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+
+    <StackLayout>
+        <Label x:Name="CalendarName" Text="Лунный календарь" TextColor="#555555"
+               VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"
+               FontSize="24" Margin="0,20, 0, -5"/>
+        <Grid RowSpacing="0" ColumnSpacing="0" 
+              HorizontalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="18"/>
+                <RowDefinition Height="18"/>
+                <RowDefinition Height="18"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="18"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <BoxView BackgroundColor="LightGreen"  HeightRequest="12"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Text="Благоприятные дни для посадки" FontSize="14" TextColor="#555555"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="18"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <BoxView BackgroundColor="Yellow"  HeightRequest="12"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Text="Нерекомендованные дни для посадки" FontSize="14" TextColor="#555555"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="18"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <BoxView BackgroundColor="Red"  HeightRequest="12"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Text="Неблагоприятные дни для посадки" FontSize="14" TextColor="#555555"/>
+                </Grid>
+            </Grid>
+        </Grid>
+       
+        <controls:Calendar 
+            Padding="10,0,10,0"   
+            x:Name="LunarCalendar"
+            
+            TitleLabelText="Lunar calendar"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="FillAndExpand"
+            SelectedBorderWidth="4"   
+            DisabledBorderColor="#000000"  
+            ShowNumberOfWeek="false"  
+            StartDay="Monday"  
+            TitleLabelTextColor="#555555"  
+            TitleLeftArrowTextColor="LightGreen"  
+            TitleRightArrowTextColor="LightGreen"
+            DateClicked="OnDateChosen"
+            DatesBackgroundColor="LightGreen"
+            BackgroundColor="#FFFFFF"
+            />
+    </StackLayout>
+
+
 </ContentPage>

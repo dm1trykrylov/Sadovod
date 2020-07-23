@@ -5,8 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Sadovod.MainPage"
+            
             xmlns:local="clr-namespace:Sadovod">
-    <local:WeatherPage></local:WeatherPage>
-    <local:CalendarPage></local:CalendarPage>
-    <local:CurePage></local:CurePage>
+    <TabbedPage.Children>
+        <local:CalendarPage Title="Calendar" IconImageSource="today.png"/>
+        
+        <local:WeatherPage Title="Weather" IconImageSource="cloudQueue.png"/>
+        <NavigationPage Title="Cure" IconImageSource="addCircleOutline.png">
+            <x:Arguments>
+                <local:CurePage/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
 </TabbedPage>
