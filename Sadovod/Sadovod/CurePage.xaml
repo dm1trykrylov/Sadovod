@@ -33,7 +33,7 @@
                            BackgroundColor="LightGreen"/>
 
                     <Entry x:Name="SymptChoise" Placeholder="Введите номера симптомов" TextColor="#555555" 
-                           PlaceholderColor="LightGrey" FontSize="16"
+                           PlaceholderColor="LightGray" FontSize="16"
                            HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
 
                     <Button x:Name="OKbutton" Clicked="OnButtonClicked" Text="OK"
