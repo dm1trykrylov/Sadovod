@@ -53,11 +53,11 @@ namespace Sadovod
                 {
                     var result = await response.Content.ReadAsStringAsync();
                     symptList = Unwrap(result);
-                    //SymptomListTxt.Text += result;
+                    SymptomListTxt.Text = "";
                     int count = 1;
                     foreach(string sympt in symptList.Symptoms)
                     {
-                        SymptomListTxt.Text += $@"{count++} {sympt}";
+                        SymptomListTxt.Text += $"{count++} {sympt}\n"; // endline for each symptom
                     }
                 }
                 else
