@@ -17,9 +17,11 @@ namespace Sadovod
         public string[] SymptomList { get; set; } = { "s1", "s2" };
         public bool[] IsSelectedItem { get; set; }
         public string PlantName { get; set; }
-        public string PlantIllness { get; set; }
+        public Disease DiseaseInfo { get; set; }
+        public SymptomsList symptList { get; set; }
 
         private string symptURL = "https://sadovodazfunc.azurewebsites.net/api/GetSympthoms?";
+        private string disURL = "https://sadovodazfunc.azurewebsites.net/api/SadovodCure?";
 
         public CurePage()
         {
@@ -27,24 +29,15 @@ namespace Sadovod
             
         }
 
-        private async void SearchPlant(object sender, EventArgs e)
+        private void SearchPlant(object sender, EventArgs e)
         {
             PlantName = PlantSearchBar.Text.ToString();
             GetSymptoms(PlantSearchBar.Text);
-            if (SymptomList.Length > 0)
-            {
-                //OKbutton.IsVisible = true;
 
-                //SymptomPicker.ItemsSource = SymptomList;
-                //SymptomPicker.IsVisible = true;
-                IsSelectedItem = new bool[SymptomList.Length];
-                IsSelectedItem.SetValue(false, 0, SymptomList.Length - 1);
+            IsSelectedItem = new bool[SymptomList.Length];
+            IsSelectedItem.SetValue(false, 0, SymptomList.Length - 1);
 
-            }
-            else
-            {
-                await DisplayAlert("Plant Search", "Unknown plant", "OK");
-            }
+                       
         }
 
         private async void GetSymptoms(string plant)
@@ -56,11 +49,12 @@ namespace Sadovod
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync();
-                    var symptList = JsonConvert.DeserializeObject<SymptomsList>(result);
+                    symptList = JsonConvert.DeserializeObject<SymptomsList>(result);
                     int count = 1;
                     foreach(string sympt in symptList.Symptoms)
                     {
-                        SymptomListTxt.Text += $"{count++} {sympt}"
+                        SymptomListTxt.Text += $@"
+                                                {count++} {sympt}";
                     }
                 }
                 else
@@ -69,33 +63,53 @@ namespace Sadovod
                 }
             }
 
-            var testList = new string[] { "sympt_1", "sympt_2", "sympt_3" };
             
             
-        }
-
-       
-
-        private void OnButtonClicked(object sender, System.EventArgs e)
-        {
-            //SymptomPicker.IsVisible = false;
-            
-            PlantIllness = GetIllness(PlantName, IsSelectedItem);
             
         }
 
        
 
-        private string GetIllness (string plant, bool[] symptMask)
+        private async void OnButtonClicked(object sender, System.EventArgs e)
         {
-            /* */
-            return "SomeIllness";
+            string[] selectedSympt = SymptChoise.Text.Split(' ');
+            List<int> symptIndexes = new List<int>();
+            foreach(string sympt in selectedSympt)
+            {
+                symptIndexes.Add(int.Parse(sympt));
+            }
+            var s1 = symptList.Symptoms[symptIndexes[0]];
+            var s2 = symptIndexes.Count > 1 ? symptList.Symptoms[symptIndexes[1]] : null;
+            var s3 = symptIndexes.Count > 2 ? symptList.Symptoms[symptIndexes[2]] : null;
+            var diseaseInf = new
+            {
+                name = PlantName,
+                sympt1 = s1,
+                sympt2 = s2,
+                sympt3 = s3
+            };
+
+            var url = $"{disURL}{diseaseInf}";
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    DiseaseInfo = JsonConvert.DeserializeObject<Disease>(result);
+                    
+                }
+                else
+                {
+                    await DisplayAlert("Plant search", "Unknown plant", "OK");
+                }
+            }
+
+            await Navigation.PushAsync(new DiseaseInfoPage(DiseaseInfo));
         }
 
-        private string GetInfo(string illness)
-        {
-            /* */
-            return "SomeText";
-        }
+       
+
+        
     }
 }

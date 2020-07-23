@@ -9,7 +9,12 @@
             xmlns:local="clr-namespace:Sadovod">
     <TabbedPage.Children>
         <local:CalendarPage Title="Calendar" IconImageSource="today.png"/>
+        
         <local:WeatherPage Title="Weather" IconImageSource="cloudQueue.png"/>
-        <local:CurePage Title="Cure" IconImageSource="addCircleOutline.png"/>
+        <NavigationPage Title="Cure" IconImageSource="addCircleOutline.png">
+            <x:Arguments>
+                <local:CurePage/>
+            </x:Arguments>
+        </NavigationPage>
     </TabbedPage.Children>
 </TabbedPage>
